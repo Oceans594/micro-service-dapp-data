@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service DataCenter {
+  rpc GetApplication (GetApplicationRequest) returns (GetApplicationResponse) {}
+}
+
+
+message GetApplicationRequest {
+  string identifier = 1;
+}
+
+message GetApplicationResponse {
+  string message = 1;
+}
